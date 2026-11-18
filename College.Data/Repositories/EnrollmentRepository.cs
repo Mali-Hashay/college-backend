@@ -21,7 +21,7 @@ namespace College.Data.Repositories
             return await _context.Enrollments.ToListAsync();
         }
 
-        public async Task<Enrollment> GetEnrollmentAsync(int id, int? userId = null)
+        public async Task<Enrollment?> GetEnrollmentAsync(int id, int? userId = null)
         {
             var query = _context.Enrollments.AsQueryable();
             if (userId.HasValue)

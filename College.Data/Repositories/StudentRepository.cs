@@ -22,7 +22,7 @@ namespace College.Data.Repositories
             return await _context.Students.ToListAsync();
         }
 
-        public async Task<Student> GetByIdAsync(int id, int? userId = null)
+        public async Task<Student?> GetByIdAsync(int id, int? userId = null)
         {
             var query = _context.Students.AsQueryable();
             if (userId.HasValue)
@@ -30,7 +30,7 @@ namespace College.Data.Repositories
             return await query.FirstOrDefaultAsync(student => student.Id == id);
         }
 
-        public async Task<Student> GetByUserIdAsync(int userId)
+        public async Task<Student?> GetByUserIdAsync(int userId)
         {
             return await _context.Students
                 .FirstOrDefaultAsync(student => student.UserId == userId);

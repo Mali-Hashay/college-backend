@@ -11,7 +11,7 @@ namespace College.Core.Services
     public interface ICourseService
     {
         public Task<IEnumerable<CourseDTO>> GetList();
-        public Task<CourseDTO> GetCourseById(int id);
+        public Task<CourseDTO?> GetCourseById(int id);
         public Task AddCourseAsync(Course course);
         public Task UpdateCourse(CourseDTO course);
         public Task DeleteCourse(int id);

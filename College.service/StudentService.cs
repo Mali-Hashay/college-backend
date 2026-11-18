@@ -27,7 +27,7 @@ namespace College.Service
             return studentDtos;
         }
 
-        public async Task<StudentDTO> GetStudent(int id, int? userId = null)
+        public async Task<StudentDTO?> GetStudent(int id, int? userId = null)
         {
             var student = await _studentRepository.GetByIdAsync(id, userId);
             return _mapper.Map<StudentDTO>(student);

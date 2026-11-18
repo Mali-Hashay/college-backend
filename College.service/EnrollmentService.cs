@@ -29,7 +29,7 @@ namespace College.Service
             return enrollmentDtos;
         }
 
-        public async Task<EnrollmentDTO> GetEnrollmentById(int id, int? userId = null)
+        public async Task<EnrollmentDTO?> GetEnrollmentById(int id, int? userId = null)
         {
             var enrollment = await _enrollmentRepository.GetEnrollmentAsync(id, userId);
             return _mapper.Map<EnrollmentDTO>(enrollment);

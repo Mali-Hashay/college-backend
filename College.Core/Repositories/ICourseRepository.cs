@@ -10,7 +10,7 @@ namespace College.Core.Repositories
     public interface ICourseRepository
     {
         public Task<List<Course>> GetAllAsync();
-        public Task<Course> GetCourseAsync(int id);
+        public Task<Course?> GetCourseAsync(int id);
         public Task PostAsync(Course course);
         public Task PutAsync(Course course);
         public Task DeleteAsync(int id);

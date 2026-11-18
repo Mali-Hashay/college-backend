@@ -1,4 +1,5 @@
 # College Backend API
+# College Backend API
 
 A layered **backend REST API** for managing college students, courses, and course enrollments.
 

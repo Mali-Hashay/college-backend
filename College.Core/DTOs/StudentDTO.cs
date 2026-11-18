@@ -14,9 +14,5 @@ namespace College.Core.DTOs
         [Required]
         [StringLength(25)]
         public string Name { get; set; }
-
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
     }
 }

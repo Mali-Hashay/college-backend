@@ -30,7 +30,7 @@ namespace College.Service
             return courseDtos;
         }
 
-        public async Task<CourseDTO> GetCourseById(int id)
+        public async Task<CourseDTO?> GetCourseById(int id)
         {
             var course = await _courseRepository.GetCourseAsync(id);
             return _mapper.Map<CourseDTO>(course);

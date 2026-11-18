@@ -11,7 +11,7 @@ namespace College.Core.Services
     public interface IStudentService
     {
         public Task<IEnumerable<StudentDTO>> GetList();
-        public Task<StudentDTO> GetStudent(int id, int? userId = null);
+        public Task<StudentDTO?> GetStudent(int id, int? userId = null);
         public Task<int?> GetStudentIdByUserIdAsync(int userId);
         public Task AddStudentAsync(Student student);
         public Task UpdateStudent(StudentDTO student);

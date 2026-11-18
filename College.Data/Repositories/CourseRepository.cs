@@ -21,7 +21,7 @@ namespace College.Data.Repositories
             return await _context.Courses.ToListAsync();
         }
 
-        public async Task<Course> GetCourseAsync(int id)
+        public async Task<Course?> GetCourseAsync(int id)
         {
            return await _context.Courses.FirstOrDefaultAsync(c => c.Id == id);
         }
