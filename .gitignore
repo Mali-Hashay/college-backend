@@ -1,0 +1,25 @@
+## היעדים והתוצרים של הקימפול (קבצים בינאריים)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+bin/
+obj/
+
+## תיקיות פנימיות והגדרות אישיות של Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## קבצי מערכת הפעלה מיותרים
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## קבצי הגדרות עם סודות (connection strings, מפתחות JWT, סיסמאות) - לא להעלות לגיט
+College.collegeAPI/appsettings.Development.json
+College.collegeAPI/appsettings.Production.json
+College.collegeAPI/appsettings.Production.Development.json
